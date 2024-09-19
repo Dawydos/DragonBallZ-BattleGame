@@ -1,0 +1,107 @@
+h1 {
+    color: green;
+}
+
+.xyz { 
+    background-size: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.btn-circle {
+    border-radius: 50%;
+    text-align: center;
+}
+
+.btn-circle.btn-sm {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0;
+    font-size: 8px;
+}
+
+.btn-circle.btn-md {
+    width: 50px;
+    height: 50px;
+    padding: 7px 10px;
+    font-size: 10px;
+}
+
+.btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    font-size: 12px;
+}
+
+.sonGoku {
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%; /* Hier kannst du die Größe von Son Goku definieren */
+}
+
+.trunks {
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 170%; /* 100% + 70% */
+    height: 170%; /* 100% + 70% */
+    transform: scaleX(-1); /* Spiegeln bleibt gleich */
+    position: relative; /* Sicherstellen, dass es relativ zu seiner Position bleibt */
+
+}
+
+.trunks-background {
+    background-image: url('https://content.invisioncic.com/z328913/monthly_2021_11/fyhhfhf.gif.4b6f694642e6b43b8746b70bbf480757.gif');
+    transform: scaleX(-1); /* Nur das Hintergrundbild spiegeln */
+    width: 100%; /* Größe von Trunks anpassen */
+}
+
+
+
+.jumbotron {
+    background: url(http://i83.servimg.com/u/f83/17/72/50/13/bt13.jpg) no-repeat center center fixed;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.bottom {
+    position: absolute;
+    width: 50%;
+    bottom: 10px;
+}
+
+#gameOverScreen {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: none;
+    z-index: 1000;
+    margin-left: -25%;
+}
+
+#gameOverScreen img {
+    width: 400%;
+    height: auto;
+}
+
+#restartButton {
+    font-size: 1.5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#restartButton:hover {
+    background-color: yellow;
+    color: black;
+}
+
+

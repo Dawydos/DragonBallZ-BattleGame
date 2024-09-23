@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
             setTimeout(function() {
                 sonGoku.style.backgroundImage = "url('https://i.makeagif.com/media/10-23-2015/9E-Xmf.gif')";
                 sonGoku.style.transform = "scale(2) scaleX(-1)"; // 100% Vergrößerung und Spiegeln
-            }, 3000);
+            }, 4000);
     
             // Nach weiteren 4 Sekunden zurück zur Ursprungsanimation und Spiegelung zurücksetzen
             setTimeout(function() {
@@ -44,8 +44,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 sonGoku.style.transform = "scale(1)"; // Zurück zur ursprünglichen Größe und keine Spiegelung
             }, 7000);
         }
-    
-    
     };
 
     window.onPlayerOneKick = function () {
@@ -54,13 +52,13 @@ document.addEventListener("DOMContentLoaded", function () {
             gameOver();
         } else {
             decreaseWidth(playerTwoPower, 4);
-            sonGoku.style.backgroundImage = "url('https://i.gifer.com/ZLBh.gif')";
+            sonGoku.style.backgroundImage = "url('https://media.tenor.com/7HTQnebtrOsAAAAi/dbz-pixel.gif')";
             checkWinCondition();
 
             // Nach 7 Sekunden zurück zur Ursprungsanimation
             setTimeout(function() {
                 sonGoku.style.backgroundImage = "url('https://i.gifer.com/origin/38/38fe168959a1c6ad51693c7e028389e0_w200.gif')";
-            }, 7000);
+            }, 12000);
         }
     };
 
@@ -80,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     };
 
-    // Player Two Methoden (vegeta)
+    // Player Two Methoden (Vegeta)
     window.onPlayerTwoPower = function () {
         if (getWidth(playerOnePower) <= 0) {
             alert("Player Two gewinnt!");
@@ -103,7 +101,7 @@ document.addEventListener("DOMContentLoaded", function () {
             gameOver();
         } else {
             decreaseWidth(playerOnePower, 2);
-            vegeta.style.backgroundImage = "url('dein_vegeta_punch_gif_url')";
+            vegeta.style.backgroundImage = "url('https://giffiles.alphacoders.com/476/476.gif')";
             checkWinCondition();
 
             // Nach 7 Sekunden zurück zur Ursprungsanimation
@@ -119,7 +117,7 @@ document.addEventListener("DOMContentLoaded", function () {
             gameOver();
         } else {
             decreaseWidth(playerOnePower, 4);
-            vegeta.style.backgroundImage = "url('dein_vegeta_kick_gif_url')";
+            vegeta.style.backgroundImage = "url('https://tenor.com/boGNx.gif')";
             checkWinCondition();
 
             // Nach 7 Sekunden zurück zur Ursprungsanimation
@@ -135,7 +133,7 @@ document.addEventListener("DOMContentLoaded", function () {
             gameOver();
         } else {
             decreaseWidth(playerOnePower, 10);
-            vegeta.style.backgroundImage = "url('dein_vegeta_super_gif_url')";
+            vegeta.style.backgroundImage = "url('https://media.tenor.com/7HTQnebtrOsAAAAi/dbz-pixel.gif')";
             checkWinCondition();
 
             // Nach 7 Sekunden zurück zur Ursprungsanimation
@@ -159,7 +157,7 @@ document.addEventListener("DOMContentLoaded", function () {
         playerTwoPower.style.width = "100%";
         playerOnePower.style.width = "100%";
         sonGoku.style.backgroundImage = "url('https://i.gifer.com/origin/38/38fe168959a1c6ad51693c7e028389e0_w200.gif')";
-        trunks.style.backgroundImage = "url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5b7466c4-1133-46eb-a3fd-886300058975/dgv9e69-3fe5e7d6-3c50-4e31-8e12-b3f9dcec560b.gif')";
+        vegeta.style.backgroundImage = "url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5b7466c4-1133-46eb-a3fd-886300058975/dgv9e69-3fe5e7d6-3c50-4e31-8e12-b3f9dcec560b.gif')";
         const gameOverScreen = document.getElementById("gameOverScreen");
         gameOverScreen.style.display = "block";
     };

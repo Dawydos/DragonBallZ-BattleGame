@@ -47,7 +47,6 @@ h1 {
     height: 170%; /* 100% + 70% */
     transform: scaleX(-1); /* Spiegeln bleibt gleich */
     position: relative; /* Sicherstellen, dass es relativ zu seiner Position bleibt */
-
 }
 
 .vegeta-background {
@@ -55,8 +54,6 @@ h1 {
     transform: scaleX(-1); /* Nur das Hintergrundbild spiegeln */
     width: 100%; /* Größe von vegeta anpassen */
 }
-
-
 
 .jumbotron {
     background: url(http://i83.servimg.com/u/f83/17/72/50/13/bt13.jpg) no-repeat center center fixed;
@@ -103,7 +100,6 @@ h1 {
     background-color: yellow;
     color: black;
 }
-
 
 .mirror {
     transform: scaleX(-1);

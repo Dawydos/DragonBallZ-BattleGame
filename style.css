@@ -40,7 +40,7 @@ h1 {
     width: 100%; /* Hier kannst du die Größe von Son Goku definieren */
 }
 
-.trunks {
+.vegeta {
     background-repeat: no-repeat;
     background-position: center;
     width: 170%; /* 100% + 70% */
@@ -50,10 +50,10 @@ h1 {
 
 }
 
-.trunks-background {
+.vegeta-background {
     background-image: url('https://content.invisioncic.com/z328913/monthly_2021_11/fyhhfhf.gif.4b6f694642e6b43b8746b70bbf480757.gif');
     transform: scaleX(-1); /* Nur das Hintergrundbild spiegeln */
-    width: 100%; /* Größe von Trunks anpassen */
+    width: 100%; /* Größe von vegeta anpassen */
 }
 
 
@@ -105,3 +105,6 @@ h1 {
 }
 
 
+.mirror {
+    transform: scaleX(-1);
+}

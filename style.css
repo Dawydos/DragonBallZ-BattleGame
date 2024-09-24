@@ -37,22 +37,21 @@ h1 {
 .sonGoku {
     background-repeat: no-repeat;
     background-position: center;
-    width: 100%; /* Hier kannst du die Größe von Son Goku definieren */
+    width: 100%;
 }
 
 .vegeta {
     background-repeat: no-repeat;
     background-position: center;
-    width: 170%; /* 100% + 70% */
-    height: 170%; /* 100% + 70% */
-    transform: scaleX(-1); /* Spiegeln bleibt gleich */
-    position: relative; /* Sicherstellen, dass es relativ zu seiner Position bleibt */
+    width: 170%; 
+    height: 170%; 
+    
 }
 
 .vegeta-background {
     background-image: url('https://content.invisioncic.com/z328913/monthly_2021_11/fyhhfhf.gif.4b6f694642e6b43b8746b70bbf480757.gif');
-    transform: scaleX(-1); /* Nur das Hintergrundbild spiegeln */
-    width: 100%; /* Größe von vegeta anpassen */
+    
+    width: 100%; 
 }
 
 .jumbotron {
@@ -99,8 +98,4 @@ h1 {
 #restartButton:hover {
     background-color: yellow;
     color: black;
-}
-
-.mirror {
-    transform: scaleX(-1);
 }

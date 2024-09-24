@@ -10,14 +10,14 @@ document.addEventListener("DOMContentLoaded", function () {
             alert("Player One gewinnt!");
             gameOver();
         } else {
-            sonGoku.style.backgroundImage = "url('http://gifimgs.com/animations/anime/dragon-ball-z/Goku/goku_11.gif')";
+            sonGoku.style.backgroundImage = "url('https://qph.cf2.quoracdn.net/main-qimg-1e988214b93b21ef64d12e17e4c99e49')";
             decreaseWidth(playerTwoPower, 6);
             checkWinCondition();
 
             // Nach 7 Sekunden zurück zur Ursprungsanimation
             setTimeout(function() {
                 sonGoku.style.backgroundImage = "url('https://i.gifer.com/origin/38/38fe168959a1c6ad51693c7e028389e0_w200.gif')";
-            }, 7000); // 7 Sekunden (7000 ms)
+            }, 9000); 
         }
     };
 
@@ -26,24 +26,33 @@ document.addEventListener("DOMContentLoaded", function () {
             alert("Player One gewinnt!");
             gameOver();
         } else {
-            // Erstes GIF um 30% vergrößern
+    
+        
             sonGoku.style.backgroundImage = "url('https://i.seadn.io/gae/pbwJ_YDig6Igdsbk-xRD2QNTbmf6gkrp7QGKMem0OhZf57tBS8YUgl_QHo5FcIZmI6QRhJiQp9RahkXc37Q_kIiOFcPDNx_ub8qSxw?auto=format&dpr=1&w=1000')";
-            sonGoku.style.transform = "scale(1.3)"; // 30% Vergrößerung
+            sonGoku.style.transform = "scale(1) translateY(-20px)";
+            
+            sonGoku.style.transition = "background-image 0.5s ease, transform 0.5s ease"; 
             decreaseWidth(playerTwoPower, 2);
             checkWinCondition();
     
-            // Nach 3 Sekunden auf das zweite GIF wechseln und um 100% vergrößern und spiegeln
+            // Nach 3 Sekunden auf das zweite GIF wechseln
             setTimeout(function() {
-                sonGoku.style.backgroundImage = "url('https://i.makeagif.com/media/10-23-2015/9E-Xmf.gif')";
-                sonGoku.style.transform = "scale(2) scaleX(-1)"; // 100% Vergrößerung und Spiegeln
-            }, 4000);
+                sonGoku.style.backgroundImage = "url('https://media1.tenor.com/m/kl8ZFYe5BrYAAAAd/goku-vegeta.gif')";
+                sonGoku.style.transform = "scale(1) translateY(-20px)"; // Position beibehalten
+                
+            }, 2000);
     
-            // Nach weiteren 4 Sekunden zurück zur Ursprungsanimation und Spiegelung zurücksetzen
+            // Nach weiteren 4 Sekunden zurück zur Ursprungsanimation
             setTimeout(function() {
                 sonGoku.style.backgroundImage = "url('https://i.gifer.com/origin/38/38fe168959a1c6ad51693c7e028389e0_w200.gif')";
-                sonGoku.style.transform = "scale(1)"; // Zurück zur ursprünglichen Größe und keine Spiegelung
-            }, 7000);
+                
+                
+            }, 6000);
         }
+    
+    
+    
+    
     };
 
     window.onPlayerOneKick = function () {
@@ -58,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
             // Nach 7 Sekunden zurück zur Ursprungsanimation
             setTimeout(function() {
                 sonGoku.style.backgroundImage = "url('https://i.gifer.com/origin/38/38fe168959a1c6ad51693c7e028389e0_w200.gif')";
-            }, 12000);
+            }, 7000);
         }
     };
 
@@ -78,19 +87,19 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     };
 
-    // Player Two Methoden (Vegeta)
+    
     window.onPlayerTwoPower = function () {
         if (getWidth(playerOnePower) <= 0) {
             alert("Player Two gewinnt!");
             gameOver();
         } else {
             decreaseWidth(playerOnePower, 6);
-            vegeta.style.backgroundImage = "url('dein_vegeta_power_gif_url')";
+            vegeta.style.backgroundImage = "url('https://media.tenor.com/7HTQnebtrOsAAAAi/dbz-pixel.gif')";
             checkWinCondition();
 
-            // Nach 7 Sekunden zurück zur Ursprungsanimation
+            
             setTimeout(function() {
-                vegeta.style.backgroundImage = "url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5b7466c4-1133-46eb-a3fd-886300058975/dgv9e69-3fe5e7d6-3c50-4e31-8e12-b3f9dcec560b.gif')";
+                vegeta.style.backgroundImage = "url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5b7466c4-1133-46eb-a3fd-886300058975/dgv9e69-3fe5e7d6-3c50-4e31-8e12-b3f9dcec560b.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzViNzQ2NmM0LTExMzMtNDZlYi1hM2ZkLTg4NjMwMDA1ODk3NVwvZGd2OWU2OS0zZmU1ZTdkNi0zYzUwLTRlMzEtOGUxMi1iM2Y5ZGNlYzU2MGIuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.IrLP1oz26N-inQ3uATZCkdW8m_KJ1tOdev4BcvVlTnE')";
             }, 7000);
         }
     };
@@ -101,12 +110,12 @@ document.addEventListener("DOMContentLoaded", function () {
             gameOver();
         } else {
             decreaseWidth(playerOnePower, 2);
-            vegeta.style.backgroundImage = "url('https://giffiles.alphacoders.com/476/476.gif')";
+            vegeta.style.backgroundImage = "url('https://i.makeagif.com/media/3-09-2016/WjHGFm.gif')";
             checkWinCondition();
 
             // Nach 7 Sekunden zurück zur Ursprungsanimation
             setTimeout(function() {
-                vegeta.style.backgroundImage = "url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5b7466c4-1133-46eb-a3fd-886300058975/dgv9e69-3fe5e7d6-3c50-4e31-8e12-b3f9dcec560b.gif')";
+                vegeta.style.backgroundImage = "url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5b7466c4-1133-46eb-a3fd-886300058975/dgv9e69-3fe5e7d6-3c50-4e31-8e12-b3f9dcec560b.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzViNzQ2NmM0LTExMzMtNDZlYi1hM2ZkLTg4NjMwMDA1ODk3NVwvZGd2OWU2OS0zZmU1ZTdkNi0zYzUwLTRlMzEtOGUxMi1iM2Y5ZGNlYzU2MGIuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.IrLP1oz26N-inQ3uATZCkdW8m_KJ1tOdev4BcvVlTnE')";
             }, 7000);
         }
     };
@@ -117,12 +126,12 @@ document.addEventListener("DOMContentLoaded", function () {
             gameOver();
         } else {
             decreaseWidth(playerOnePower, 4);
-            vegeta.style.backgroundImage = "url('https://tenor.com/boGNx.gif')";
+            vegeta.style.backgroundImage = "url('https://media1.tenor.com/m/J26CWkFyjwsAAAAd/vegeta-super-saiyan.gif')";
             checkWinCondition();
 
             // Nach 7 Sekunden zurück zur Ursprungsanimation
             setTimeout(function() {
-                vegeta.style.backgroundImage = "url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5b7466c4-1133-46eb-a3fd-886300058975/dgv9e69-3fe5e7d6-3c50-4e31-8e12-b3f9dcec560b.gif')";
+                vegeta.style.backgroundImage = "url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5b7466c4-1133-46eb-a3fd-886300058975/dgv9e69-3fe5e7d6-3c50-4e31-8e12-b3f9dcec560b.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzViNzQ2NmM0LTExMzMtNDZlYi1hM2ZkLTg4NjMwMDA1ODk3NVwvZGd2OWU2OS0zZmU1ZTdkNi0zYzUwLTRlMzEtOGUxMi1iM2Y5ZGNlYzU2MGIuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.IrLP1oz26N-inQ3uATZCkdW8m_KJ1tOdev4BcvVlTnE')";
             }, 7000);
         }
     };
@@ -138,7 +147,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // Nach 7 Sekunden zurück zur Ursprungsanimation
             setTimeout(function() {
-                vegeta.style.backgroundImage = "url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5b7466c4-1133-46eb-a3fd-886300058975/dgv9e69-3fe5e7d6-3c50-4e31-8e12-b3f9dcec560b.gif')";
+                vegeta.style.backgroundImage = "url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5b7466c4-1133-46eb-a3fd-886300058975/dgv9e69-3fe5e7d6-3c50-4e31-8e12-b3f9dcec560b.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzViNzQ2NmM0LTExMzMtNDZlYi1hM2ZkLTg4NjMwMDA1ODk3NVwvZGd2OWU2OS0zZmU1ZTdkNi0zYzUwLTRlMzEtOGUxMi1iM2Y5ZGNlYzU2MGIuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.IrLP1oz26N-inQ3uATZCkdW8m_KJ1tOdev4BcvVlTnE')";
             }, 7000);
         }
     };
@@ -157,7 +166,7 @@ document.addEventListener("DOMContentLoaded", function () {
         playerTwoPower.style.width = "100%";
         playerOnePower.style.width = "100%";
         sonGoku.style.backgroundImage = "url('https://i.gifer.com/origin/38/38fe168959a1c6ad51693c7e028389e0_w200.gif')";
-        vegeta.style.backgroundImage = "url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5b7466c4-1133-46eb-a3fd-886300058975/dgv9e69-3fe5e7d6-3c50-4e31-8e12-b3f9dcec560b.gif')";
+        trunks.style.backgroundImage = "url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5b7466c4-1133-46eb-a3fd-886300058975/dgv9e69-3fe5e7d6-3c50-4e31-8e12-b3f9dcec560b.gif')";
         const gameOverScreen = document.getElementById("gameOverScreen");
         gameOverScreen.style.display = "block";
     };
